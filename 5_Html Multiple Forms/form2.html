@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <h2>Job Application </h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+         <br/>
+         <br/>
+         <label for="name">Email Id:</label>
+        <input type="email" id="name" name="name">
+        <br/>
+        <br/>
+         <label for="phonenumber">Teliphone:</label>
+         <input type="tel" id="phonenumber" name="phonenumber">
+         <br/>
+         <br/>  
+         <label for="filename">Choose file</label>
+         <input type="file" name="filename" id="filename">
+         <br/>
+         <br/>
+         <label for="counter">Expireance(in year)</label>
+         <input type="number" name="counter" id="counter" min="0" max="50">
+
+         <fieldset>
+            <legend>Skills</legend>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="HTML" id="HTML">
+            <br/>
+            <br/>
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="CSS" id="CSS">
+            <br/>
+            <br/>
+            <label for="JAVASCRIPT">JAVASCRIPT</label>
+            <input type="checkbox" name="JAVASCRIPT" id="JAVASCRIPT">
+         </fieldset>
+         <br>
+         <br>
+         <label for="Highest Education">Highest Education</label>
+         <br/>
+         <br/>
+          <select name="HigherEducation" id="Highest Education">
+          <option value="HighSchool">HighSchool</option>
+          <option value="Bachlar Degree">Bachlar Degree</option>
+          <option value="PHD">PHD</option>
+          <option value="d">d</option>
+          </select>
+         <fieldset>
+            <legend>Avalibilty</legend>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Full time</label>
+            <br/>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Part time</label>
+         </fieldset>
+        </fieldset>
+        <label for="textarea">Commints:</label>
+       <br/>  
+       <textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+        <button>Sumbit Application</button>
+
+    </form>
+</body>
+</html>
