@@ -1,0 +1,8 @@
+/* this is External CSS(Cascading style sheet) */
+h1{
+    font-size: large;
+    text-align: center;
+}
+p{
+    background-color: brown;
+}
