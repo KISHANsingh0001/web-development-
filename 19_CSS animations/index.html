@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .con{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid
+            black;
+        }
+        .box{
+             width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid yellow;
+            position: relative;
+            /* We can also declayer this type  */
+            /* animation: rightmovment;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: linear;
+            animation-direction: alternate; It is used to select the direction */
+            /* animation-timing-function: cubic-bezier(0.1 ,0.7 ,1.0 ,0.1); /*It is used to select the speed by the curv *? */
+            /* animation-fill-mode: both; */
+            /*Short hand notation */
+         animation: 5s linear 1s infinite alternate none running rightmovment;
+        }
+        @keyframes  rightmovment {
+               from{
+                top: 0;
+                left: 0;
+               }
+               to{
+                top: 0;
+                left: 1350px;
+               }
+            
+        }
+        #box2{
+             width: 350px;
+            height: 80px;
+            background-color: rgb(45, 209, 39);
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid yellow;
+            position: relative;
+            animation: 5s ease-in 1s infinite alternate none running leftmovment;
+        }
+        @keyframes leftmovment {
+            from{
+                top: 540px;
+                left: 1350px;
+            }
+            to{
+               top: 540px;
+               left: 0px;
+            }
+        }
+        #circule{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(45, 209, 39);
+            border-radius: 50px;
+            margin: 10px;
+            border: 3px solid yellow;
+            position: relative;
+            /* animation: 5s ease-in 1s infinite alternate none running leftmovment; */
+            top: 30%;
+            left: 40%;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circulmovment;
+        }
+        @keyframes circulmovment {
+           0%{
+            top: 1%;
+            left: 5%;
+           }
+           30%{
+            top: 5%;
+            left: 90%;
+           }
+           60%{
+            top: 70%;
+            left: 10%;
+           }
+           100%{
+            top: 75%;
+            left: 90%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+         <div class="box"></div>
+         <div id="circule"></div>
+         <div id="box2"></div>
+         
+
+    </div>
+</body>
+</html>

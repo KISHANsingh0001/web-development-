@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       :root{
+           /* if we difine the variable in root so this variable
+           can be acsses anywhere of code  */
+           --primary-color: brown;
+           --custom-width: 330px;
+       }
+       .con{
+           background-color: beige;
+           height:  650px;
+           border: 2px solid black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .box{
+           /* creating custum variable  */
+           /* --primary-color: brown;
+           --custom-width: 330px; */
+           background-color: aquamarine;
+           width: var(--custom-width);
+           height: 330px;
+           border: 1px solid var(--primary-color);
+           margin: 5px;
+           padding: 5px;
+           /* box shadow creating shadow  */
+           /* box-shadow: 10px 15px rgb(56, 165, 34); */
+            /* box shadow using blur radious  */
+            /* box-shadow: 10px 15px 5px black; */
+           /* box shadow using sprade radious  */
+           box-shadow: 10px 15px 5px 5px black;
+           
+       }
+       img{
+           box-shadow: 10px 15px 10px ;
+       }
+       #head1{
+        /* text-shadow: 10px 3px 1px white ;
+
+        text-shadow: yellow 12px 13px 2px ; */
+        /* text-shadow: 13px 12px ; */
+        text-shadow: 1px 1px 2px rgb(30, 23, 23);
+       }
+   </style>
+</head>
+<body>
+   <div class="con">
+       <div class="box">
+           <img src="398_bmw.jpg" alt="logo" width="110px" height="120px">
+           <h2 id="head1">welcome to Bmw</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Architecto eaque esse aut porro ad accusamus animi impedit,
+            tempore obcaecati maxime, dolore autem ipsam itaque vero.</p>
+
+       </div>
+   </div>
+</body>
+</html>
