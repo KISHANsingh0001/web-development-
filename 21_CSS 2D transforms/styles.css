@@ -1,0 +1,42 @@
+.con{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    /* margin:auto; */
+    transition: all 2s linear 0ms;
+    transition-duration: 1s;
+    
+}
+.box:hover{
+        
+        transform: rotate(-360deg); /* It is used to rotate the box */
+
+        /* transform: rotate(-360deg); /* (-) sign for anti clockwise rotation */
+
+      /* transform: scale(2);   --> It is used to increse the size of the box */
+
+       /* transform: skew(45deg);   /*--> It is used to tilet  the box */
+
+       /*--> It is used to move  the box */
+         /* translate(x-axies direction , y-axies direction) */
+        /* transform: translate(500px); /*--> in this argument box will move the 500px to the positive x-axies direction */
+
+        /* transform: translate(-500px); /*--> in this argument box will move the 500px to the nagetive x-axies direction */
+
+       /* transform: translate(0 , 500px); /*--> in this argument box will move the 500px to the nagetive Y-axies direction */
+       
+        /*transform: translate(0 , -500px); /*--> in this argument box will move the 500px to the positive Y-axies direction */
+    }

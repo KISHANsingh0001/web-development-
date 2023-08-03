@@ -1,0 +1,48 @@
+<!-- What is transitions ?
+     a transition in CSS is a way to make an element on a web page change smoothly from one style to another
+     when certain properties are modified. It allows you to add smooth animations or effects when, for example,
+     hovering over a button, changing the color of a text, or resizing an image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px ;
+            background-color: beige;
+            border: 2px solid black;
+ 
+            transition-property: all;    /* for transition speed smooth */
+            /* transition-property: width; */
+            transition-duration: 4s;
+            transition-delay: 0s; 
+            transition-timing-function: linear;
+
+            /* shortHand notation  */
+        /*  -->         property name | duration */
+            /* transition: all 2s; */
+
+        /* -->      property name | duration | delay */
+        /* transition: all 2s 0s; */
+
+        /*-->       property name | duration | easing function | delay */
+        /* transition: all 2s ease-in 0s; */
+
+            transition: width 2s , height 5s;
+        }
+
+        .box:hover{
+            width: 1200px;
+            height: 900px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
